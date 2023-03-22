@@ -12,6 +12,7 @@ def registerCriminal(img, path, img_num):
 
     if(len(faces) > 0):
         # Taking the largest face detected
+        # Taking the largest face detected
         faces = sorted(faces, key=lambda x: x[3], reverse=True)  # sort based on height of image
         face_i = faces[0]
         (x, y, w, h) = [v * size for v in face_i]

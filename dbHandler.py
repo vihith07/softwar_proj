@@ -30,7 +30,7 @@ def retrieveData(name):
     id = None
     crim_data = None
 
-    db = pymysql.connect(host='localhost', user='root',password='Naman____37@', database='criminaldb')
+    db = pymysql.connect(host='localhost', user='root',password='vihith', database='criminaldb')
     cursor = db.cursor()
     print("database connected")
 
