@@ -3,7 +3,7 @@ import pymysql
 def insertData(data):
     rowId = 0
 
-    db = pymysql.connect(host='localhost', user='root',password='Naman____37@', database='criminaldb')
+    db = pymysql.connect(host='localhost', user='root',password='vihith', database='criminaldb')
     cursor = db.cursor()
     print("database connected")
 

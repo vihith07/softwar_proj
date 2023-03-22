@@ -211,7 +211,7 @@ def register(entries, required, menu_var):
 
             # save profile pic
             profile_img_num = int(menu_var.get().split(' ')[1]) - 1
-            if not os.path.isdir("profile_pics"):
+            if not os.path.isdir("Criminal-Detction-/profile_pics"):
                 os.mkdir("profile_pics")
             cv2.imwrite("profile_pics/criminal %d.png"%rowId, img_list[profile_img_num])
 
@@ -494,13 +494,13 @@ btn_frame = tk.Frame(pages[0], bg="#202d42", pady=30)
 btn_frame.pack()
 
 tk.Button(btn_frame, text="Register Criminal", command=getPage1)
-tk.Button(btn_frame, text="Detect Criminal", command=getPage2)
 tk.Button(btn_frame, text="Video Surveillance", command=getPage3)
+tk.Button(btn_frame, text="Detect Criminal", command=getPage2)
 
 for btn in btn_frame.winfo_children():
     btn.configure(font="Arial 20", width=17, bg="#2196f3", fg="white",
         pady=15, bd=0, highlightthickness=0, activebackground="#091428", activeforeground="white")
-    btn.pack(pady=30)
+    btn.pack(pady=5)
 
 
 
